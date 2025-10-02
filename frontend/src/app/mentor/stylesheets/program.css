@@ -1,0 +1,178 @@
+.trainer-banner {
+    background:
+            linear-gradient(#1e2933,#1e2933) right/120px 100%,
+            linear-gradient(to bottom right, transparent 47%, #1e2933 52%) calc(100% - 118px) 0/40% 100%,
+            linear-gradient(to right, #1e2933 , #39424B 50%);
+    background-repeat: no-repeat;
+}
+
+.trainer-banner-1 {
+    background:
+            linear-gradient(#1e2933,#1e2933) right/120px 100%,
+            linear-gradient(to bottom right, transparent 47%, #1e2933 52%) calc(100% - 118px) 0/40% 100%,
+            linear-gradient(to right, #1e2933 , #39424B 50%);
+    background-repeat: no-repeat;
+}
+
+.trainer-banner-2 {
+    background:
+            linear-gradient(#0d3b66, #0d3b66) right/120px 100%,
+            linear-gradient(to bottom right, transparent 47%, #0d3b66 52%) calc(100% - 118px) 0/40% 100%,
+            linear-gradient(to right, #0d3b66, #278ea5 50%);
+    background-repeat: no-repeat;
+}
+
+.trainer-banner-3 {
+    background:
+            linear-gradient(#FF6F61, #FF6F61) right/120px 100%,
+            linear-gradient(to bottom right, transparent 47%, #FF6F61 52%) calc(100% - 118px) 0/40% 100%,
+            linear-gradient(to right, #FF6F61, #FFA177 50%);
+    background-repeat: no-repeat;
+}
+
+.trainer-banner-4 {
+    background:
+            linear-gradient(#2A9D8F, #2A9D8F) right/120px 100%,
+            linear-gradient(to bottom right, transparent 47%, #2A9D8F 52%) calc(100% - 118px) 0/40% 100%,
+            linear-gradient(to right, #2A9D8F, #52B788 50%);
+    background-repeat: no-repeat;
+}
+
+.trainer-banner-5 {
+    background:
+            linear-gradient(#6A0DAD, #6A0DAD) right/120px 100%,
+            linear-gradient(to bottom right, transparent 47%, #6A0DAD 52%) calc(100% - 118px) 0/40% 100%,
+            linear-gradient(to right, #6A0DAD, #A984E0 50%);
+    background-repeat: no-repeat;
+}
+
+.trainer-banner-6 {
+    background:
+            linear-gradient(#0F172A, #0F172A) right/120px 100%,
+            linear-gradient(to bottom right, transparent 47%, #0F172A 52%) calc(100% - 118px) 0/40% 100%,
+            linear-gradient(to right, #0F172A, #00E5FF 50%);
+    background-repeat: no-repeat;
+}
+
+.trainer-banner-7 {
+    background:
+            linear-gradient(#8D6E63, #8D6E63) right/120px 100%,
+            linear-gradient(to bottom right, transparent 47%, #8D6E63 52%) calc(100% - 118px) 0/40% 100%,
+            linear-gradient(to right, #8D6E63, #BCAAA4 50%);
+    background-repeat: no-repeat;
+}
+
+.trainer-banner-8 {
+    background:
+            linear-gradient(#1976D2, #1976D2) right/120px 100%,
+            linear-gradient(to bottom right, transparent 47%, #1976D2 52%) calc(100% - 118px) 0/40% 100%,
+            linear-gradient(to right, #1976D2, #64B5F6 50%);
+    background-repeat: no-repeat;
+}
+
+.trainer-banner-9 {
+    background:
+            linear-gradient(#388E3C, #388E3C) right/120px 100%,
+            linear-gradient(to bottom right, transparent 47%, #388E3C 52%) calc(100% - 118px) 0/40% 100%,
+            linear-gradient(to right, #388E3C, #81C784 50%);
+    background-repeat: no-repeat;
+}
+
+.trainer-banner-10 {
+    background:
+            linear-gradient(#D32F2F, #D32F2F) right/120px 100%,
+            linear-gradient(to bottom right, transparent 47%, #D32F2F 52%) calc(100% - 118px) 0/40% 100%,
+            linear-gradient(to right, #D32F2F, #E57373 50%);
+    background-repeat: no-repeat;
+}
+
+.trainer-banner-11 {
+    background:
+            linear-gradient(#7B1FA2, #7B1FA2) right/120px 100%,
+            linear-gradient(to bottom right, transparent 47%, #7B1FA2 52%) calc(100% - 118px) 0/40% 100%,
+            linear-gradient(to right, #7B1FA2, #BA68C8 50%);
+    background-repeat: no-repeat;
+}
+
+.trainer-banner-12 {
+    background:
+            linear-gradient(#455A64, #455A64) right/120px 100%,
+            linear-gradient(to bottom right, transparent 47%, #455A64 52%) calc(100% - 118px) 0/40% 100%,
+            linear-gradient(to right, #455A64, #90A4AE 50%);
+    background-repeat: no-repeat;
+}
+
+/* Client Banner Styles - Modern Geometric Patterns */
+.client-banner-1 {
+    background: 
+        radial-gradient(circle at 0% 50%, transparent 25%, #2196F3 25.5%),
+        linear-gradient(90deg, #1976D2, #2196F3);
+    background-size: 20px 20px, 100% 100%;
+    background-repeat: repeat-x, no-repeat;
+}
+
+.client-banner-2 {
+    background:
+        linear-gradient(45deg, #4CAF50 25%, transparent 25%) -10px 0,
+        linear-gradient(-45deg, #4CAF50 25%, transparent 25%) -10px 0,
+        linear-gradient(45deg, transparent 75%, #4CAF50 75%) -10px 0,
+        linear-gradient(-45deg, transparent 75%, #4CAF50 75%) -10px 0;
+    background-size: 20px 20px;
+    background-color: #81C784;
+}
+
+.client-banner-3 {
+    background:
+        linear-gradient(135deg, #FF5722 25%, transparent 25%) -10px 0,
+        linear-gradient(225deg, #FF5722 25%, transparent 25%) -10px 0,
+        linear-gradient(315deg, #FF5722 25%, transparent 25%),
+        linear-gradient(45deg, #FF5722 25%, transparent 25%);
+    background-size: 20px 20px;
+    background-color: #FF7043;
+}
+
+.client-banner-4 {
+    background:
+        linear-gradient(60deg, #9C27B0 50%, transparent 50%),
+        linear-gradient(-60deg, #9C27B0 50%, transparent 50%);
+    background-size: 20px 20px;
+    background-color: #BA68C8;
+}
+
+.client-banner-5 {
+    background:
+        linear-gradient(30deg, #00BCD4 12%, transparent 12.5%, transparent 87%, #00BCD4 87.5%, #00BCD4),
+        linear-gradient(150deg, #00BCD4 12%, transparent 12.5%, transparent 87%, #00BCD4 87.5%, #00BCD4),
+        linear-gradient(30deg, #00BCD4 12%, transparent 12.5%, transparent 87%, #00BCD4 87.5%, #00BCD4),
+        linear-gradient(150deg, #00BCD4 12%, transparent 12.5%, transparent 87%, #00BCD4 87.5%, #00BCD4),
+        linear-gradient(60deg, #4DD0E1 25%, transparent 25.5%, transparent 75%, #4DD0E1 75%, #4DD0E1);
+    background-size: 20px 35px;
+    background-color: #80DEEA;
+}
+
+.client-banner-6 {
+    background:
+        linear-gradient(0deg, transparent 50%, #FFC107 50%),
+        linear-gradient(90deg, transparent 50%, #FFC107 50%);
+    background-size: 10px 10px;
+    background-color: #FFD54F;
+}
+
+.client-banner-7 {
+    background:
+        radial-gradient(circle at 50% 50%, #E91E63 25%, transparent 25%),
+        radial-gradient(circle at 0% 0%, #E91E63 25%, transparent 25%),
+        radial-gradient(circle at 100% 0%, #E91E63 25%, transparent 25%),
+        radial-gradient(circle at 0% 100%, #E91E63 25%, transparent 25%),
+        radial-gradient(circle at 100% 100%, #E91E63 25%, transparent 25%);
+    background-size: 20px 20px;
+    background-color: #F06292;
+}
+
+.client-banner-8 {
+    background:
+        linear-gradient(45deg, #607D8B 25%, transparent 25%, transparent 75%, #607D8B 75%),
+        linear-gradient(-45deg, #607D8B 25%, transparent 25%, transparent 75%, #607D8B 75%);
+    background-size: 20px 20px;
+    background-color: #90A4AE;
+}
