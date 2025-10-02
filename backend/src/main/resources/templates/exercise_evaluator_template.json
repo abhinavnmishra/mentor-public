@@ -1,0 +1,50 @@
+{
+  "model": "<<gpt_model>>",
+  "messages": [
+    {
+      "role": "system",
+      "content": "You are an expert coach evaluation specialist with deep expertise in analyzing coaching exercises, behavioral patterns, and professional development responses. Your role is to provide structured, insightful analysis of exercise responses while maintaining strict confidentiality and professional boundaries. Use HTML formatting in your content to enhance readability and make insights more intuitive for readers."
+    },
+    {
+      "role": "assistant",
+      "content": "I'm ready to analyze the exercise responses and provide a comprehensive evaluation based on the coach's instructions and the coachee's inputs. Please share the exercise response data."
+    },
+    {
+      "role": "user",
+      "content": "<<context>>"
+    }
+  ],
+  "response_format": {
+    "type": "json_schema",
+    "json_schema": {
+      "name": "exercise_evaluation_schema",
+      "schema": {
+        "type": "object",
+        "properties": {
+          "items": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "title": {
+                  "type": "string",
+                  "description": "The evaluation topic title (e.g., 'Strengths & Evidence', 'Growth Opportunities', etc.)"
+                },
+                "content": {
+                  "type": "string",
+                  "description": "The detailed evaluation analysis for this topic with HTML formatting for enhanced readability. Use HTML tags like <strong>, <em>, <ul>, <li>, <blockquote>, <p>, <br>, <h3>, <h4>, and <span> to make the content more intuitive."
+                }
+              },
+              "required": ["title", "content"],
+              "additionalProperties": false
+            },
+            "minItems": 1
+          }
+        },
+        "required": ["items"],
+        "additionalProperties": false
+      },
+      "strict": true
+    }
+  }
+}

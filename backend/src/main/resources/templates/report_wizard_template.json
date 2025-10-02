@@ -1,0 +1,58 @@
+{
+  "model": "<<gpt_model>>",
+  "messages": [
+    {
+      "role": "system",
+      "content": "You are an AI assistant specialized in editing report objects for the mentorAI training application. The report is represented as a nested JSON with program-level fields like 'programName', 'programDescription', etc., and client-specific information in the 'clientReportList' array. When the trainer asks you to update report content, analyze their request to determine which fields need updating. For your response, always return a JSON array of objects following the specified schema. Each object must have a 'type' which is either 'message' or 'write-operation'. When the type is 'message', provide a natural language response in the 'message' field and leave 'path' and 'value' empty. When the type is 'write-operation', provide: 1) A brief message explaining the update, 2) In the 'path' field, include an appropriate helper method call such as findClientInReport(), findMilestoneInReport(), or findClientMilestoneInReport() to locate the exact field, and 3) The new content for that field in the 'value' field. You may include multiple message and write-operation objects in your response as needed. IMPORTANT FORMATTING RULES: 1) Always use single quotes instead of double quotes in all strings within path expressions to avoid escape character issues, e.g., findClientInReport(reportId, 'client-name') instead of findClientInReport(reportId, \"client-name\"). 2) Always use the placeholder 'reportId' in function calls instead of the actual UUID of the report, e.g., findClientInReport(reportId, 'client-name') instead of findClientInReport('actual-uuid', 'client-name')."
+    },
+    {
+      "role": "assistant",
+      "content": "how can I help you?"
+    },
+    {
+      "role": "user",
+      "content": "can you help me create a report?"
+    }
+  ],
+  "response_format": {
+    "type": "json_schema",
+    "json_schema": {
+      "name": "report_editing_schema",
+      "schema": {
+        "type": "object",
+        "properties": {
+          "items": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "type": {
+                  "type": "string",
+                  "description": "Specifies the type of response item. 'message' for a natural language message and 'write-operation' for an update operation.",
+                  "enum": ["message", "write-operation"]
+                },
+                "message": {
+                  "type": "string",
+                  "description": "For 'message' type: The natural language message for the trainer. For 'write-operation' type: Brief explanation of what is being updated."
+                },
+                "path": {
+                  "type": "string",
+                  "description": "For 'write-operation' type only: The method call to find the JSON path (e.g., 'findClientMilestoneInReport(reportId, 'client-id', 'milestone-id')'). Always use single quotes for strings and use 'reportId' as a placeholder. Leave blank if the type is 'message'."
+                },
+                "value": {
+                  "type": "string",
+                  "description": "For 'write-operation' type only: The new value for the field at the specified path. Leave blank if the type is 'message'."
+                }
+              },
+              "required": ["type", "message", "path", "value"],
+              "additionalProperties": false
+            }
+          }
+        },
+        "required": ["items"],
+        "additionalProperties": false
+      },
+      "strict": true
+    }
+  }
+}

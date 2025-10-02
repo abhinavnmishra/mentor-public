@@ -1,0 +1,40 @@
+<tools>
+    <tool>
+        <id>1</id>
+        <displayName>Read Trainers</displayName>
+        <verb>fetching trainer accounts</verb>
+        <name>read_trainers</name>
+        <type>read</type>
+        <description>Reads data about the trainers present in the organisation from the database. Gives information such as the trainer name, email address, unique id, short description (trainer overview) and long description (complete qualifications). It does not require any input.</description>
+        <inputs/>
+        <response>A JSON list of all the trainer records.</response>
+        <previewRequired>false</previewRequired>
+    </tool>
+    <tool>
+        <id>2</id>
+        <displayName>Send Email</displayName>
+        <verb>sending email</verb>
+        <name>send_email</name>
+        <type>operation</type>
+        <description>Send email to the </description>
+        <inputs>
+            <input>
+                <name>destination_email</name>
+                <type>string</type>
+                <description>The exact email address of the receiver.</description>
+            </input>
+            <input>
+                <name>email_subject</name>
+                <type>string</type>
+                <description>The subject line of the email being sent.</description>
+            </input>
+            <input>
+                <name>email_body</name>
+                <type>string</type>
+                <description>The body of the email being sent.</description>
+            </input>
+        </inputs>
+        <response>A string containing the message if the email was sent successfully or not.</response>
+        <previewRequired>true</previewRequired>
+    </tool>
+</tools> 

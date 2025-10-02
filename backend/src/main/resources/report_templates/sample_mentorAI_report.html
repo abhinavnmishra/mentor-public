@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" style="margin: 0; padding: 0;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{PAGE_TITLE}}</title>
+</head>
+
+<!-- TEMPLATE_ID: classic_template -->
+<!-- TEMPLATE_NAME: Classic Professional Template -->
+
+<!-- BODY_CONTAINER_START -->
+<body style="font-family: Arial, Helvetica, sans-serif; line-height: 1.6; color: #333; margin: 0; padding: 0; background-color: #f9f9f9;">
+    <div style="width: 210mm; min-height: 297mm; margin: 0 auto; padding: 0px; background-color: white; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
+        
+        <img style="width: 100%; height: auto; object-fit: contain;" src="{{PRIMARY_HEADER}}" alt="Organization Header">
+                             
+        <div style="width: 90%; max-width: 180mm; margin: 0 auto; padding: 0 15px;">
+            
+            <!-- SECONDARY HEADER START -->
+            <div style="padding: 5px 0; text-align: left; margin-bottom: 20px; border-bottom: 1px solid #ddd; position: relative;">
+                <h2 style="font-size: 14px; color: #555; font-weight: normal; margin: 0;">{{PAGE_TITLE}}</h2>
+                <div style="position: absolute; right: 0; bottom: 10px; font-size: 12px; color: #999; text-align: right; width: 100px;">Page {{PAGE_NUMBER}}</div>
+            </div>
+            <!-- SECONDARY HEADER END -->
+            
+            <div style="text-align: right; font-style: italic; margin-bottom: 20px; color: #666; font-size: 11px;">
+                <p style="margin: 5px 0;">Report Generated: {{DATE}}</p>
+                <p style="margin: 5px 0;">Prepared for: {{CLIENT_NAME_DESIGNATION}}</p>
+            </div>
+            
+            {{BODY}}
+            
+        </div>
+            
+        <!-- FOOTER START -->
+        <img style="width: 100%; height: auto; object-fit: contain;" src="{{PRIMARY_FOOTER}}" alt="Organization Footer">
+        <!-- FOOTER END -->
+    </div>
+</body>
+<!-- BODY_CONTAINER_END -->
+
+<!-- SECTION_CONTAINER_START -->
+<div style="margin-bottom: 30px; padding: 15px; background-color: white; border-radius: 5px; border-left: 4px solid #2c3e50;">
+     <h3 style="color: #2c3e50; border-bottom: 1px solid #eee; padding-bottom: 8px; margin-top: 0;">{{HEADING}}</h3>
+     <p>{{CONTENT}}</p>
+</div>
+<!-- SECTION_CONTAINER_END -->
+
+<!-- IMAGE_CONTAINER_START -->
+<div style="text-align: center; margin: 30px 0; padding: 15px; background-color: #f8f9fa; border-radius: 5px;">
+      <img style="max-width: 100%; height: auto; box-shadow: 0 0 5px rgba(0,0,0,0.1);" src="{{IMAGE_URL}}" alt="{{IMAGE_TITLE}}">
+      <p style="font-style: italic; color: #666; font-size: 13px; margin-top: 8px;">{{IMAGE_TITLE}}</p>
+</div>
+<!-- IMAGE_CONTAINER_END -->
+
+<!-- TABLE_CONTAINER_START -->
+<div style="margin-bottom: 30px; padding: 15px; background-color: white; border-radius: 5px; border-left: 4px solid #2c3e50;">
+    <h3 style="color: #2c3e50; border-bottom: 1px solid #eee; padding-bottom: 8px; margin-top: 0;">Table of Contents</h3>
+   
+    <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
+        {{TABLE_ROWS}}
+    </table>
+</div>
+<!-- TABLE_CONTAINER_END -->
+
+<!-- SECTION_ROW_CONTAINER_START -->
+<tr>
+    <td style="padding: 10px 0; border-bottom: 1px dotted #ddd;">
+        <a href="#" style="color: #2c3e50; text-decoration: none; font-weight: bold;">{{NAME}}</a>
+    </td>
+    <td style="padding: 10px 0; text-align: right; border-bottom: 1px dotted #ddd;">{{PAGE_NUMBER}}</td>
+</tr>
+<!-- SECTION_ROW_CONTAINER_END -->
+
+<!-- PAGE_ROW_CONTAINER_START -->
+<tr>
+    <td style="padding: 5px 0 5px 20px; border-bottom: 1px dotted #ddd;">
+        <a href="#" style="color: #2c3e50; text-decoration: none;">{{NAME}}</a>
+    </td>
+    <td style="padding: 5px 0; text-align: right; border-bottom: 1px dotted #ddd;">{{PAGE_NUMBER}}</td>
+</tr>
+<!-- PAGE_ROW_CONTAINER_END -->
+
+</html> 

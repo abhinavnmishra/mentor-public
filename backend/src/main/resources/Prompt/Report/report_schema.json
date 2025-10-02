@@ -1,0 +1,38 @@
+{
+  "id": "UUID",
+  "version": {
+    "reportId": "String",
+    "coachingProgramId": "String",
+    "count": "Integer"
+  },
+  "published": "Boolean",
+  "programName": "String",
+  "programDescription": "String",
+  "programObjective": "String",
+  "aboutTheTrainer": "String",
+  "conclusion": "String",
+  "clientReportList": [
+    {
+      "client": {
+        "clientId": "String",
+        "clientName": "String"
+      },
+      "focusAreas": [
+        {
+          "focusAreaId": "String",
+          "clientId": "String",
+          "focusAreaImprovementSummary": "String",
+          "focusAreaImprovementGraph": "Json"
+        }
+      ]
+    }
+  ],
+  "focusAreas": [
+    {
+      "focusAreaId": "String",
+      "name": "String",
+      "focusAreaDescriptionSummary": "String",
+      "focusAreaObjectiveSummary": "String"
+    }
+  ]
+} 

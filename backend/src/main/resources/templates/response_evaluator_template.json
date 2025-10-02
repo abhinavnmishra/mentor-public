@@ -1,0 +1,49 @@
+{
+  "model": "<<gpt_model>>",
+  "messages": [
+    {
+      "role": "system",
+      "content": "You are an expert assessment evaluator specializing in leadership development, organizational psychology, and professional competency assessment. Your role is to objectively evaluate written responses to descriptive questions and assign appropriate numerical scores based on established criteria. You will analyze each response in relation to its focus areas and scoring criteria, then provide a structured output with your assigned scores."
+    },
+    {
+      "role": "assistant",
+      "content": "I'm ready to evaluate the responses based on the given criteria and provide numerical scores for each. Please share the response data."
+    },
+    {
+      "role": "user",
+      "content": "<<context>>"
+    }
+  ],
+  "response_format": {
+    "type": "json_schema",
+    "json_schema": {
+      "name": "response_evaluation_schema",
+      "schema": {
+        "type": "object",
+        "properties": {
+          "items": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "responseId": {
+                  "type": "string",
+                  "description": "The unique identifier of the response being evaluated, exactly as provided in the context"
+                },
+                "score": {
+                  "type": "integer",
+                  "description": "The numerical score assigned to this response, within the min and max score range specified in the context"
+                }
+              },
+              "required": ["responseId", "score"],
+              "additionalProperties": false
+            }
+          }
+        },
+        "required": ["items"],
+        "additionalProperties": false
+      },
+      "strict": true
+    }
+  }
+} 

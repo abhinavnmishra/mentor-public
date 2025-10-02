@@ -1,0 +1,41 @@
+[
+  {
+    "id" : 1,
+    "displayName" : "Read Trainers",
+    "verb" : "fetching trainer accounts",
+    "name" : "read_trainers",
+    "type" : "read",
+    "description" : "Reads data about the trainers present in the organisation from the database. Gives information such as the trainer name, email address, unique id, short description (trainer overview) and long description (complete qualifications). It does not require any input.",
+    "inputs" : [
+    ],
+    "response" : "A JSON list of all the trainer records.",
+    "previewRequired" : false
+  },
+  {
+    "id" : 2,
+    "displayName" : "Send Email",
+    "verb" : "sending email",
+    "name" : "send_email",
+    "type" : "operation",
+    "description" : "Send email to the ",
+    "inputs" : [
+      {
+        "name" : "destination_email",
+        "type" : "string",
+        "description" : "The exact email address of the receiver."
+      },
+      {
+        "name" : "email_subject",
+        "type" : "string",
+        "description" : "The subject line of the email being sent."
+      },
+      {
+        "name" : "email_body",
+        "type" : "string",
+        "description" : "The body of the email being sent."
+      }
+    ],
+    "response" : "A string containing the message if the email was sent successfully or not.",
+    "previewRequired" : true
+  }
+]

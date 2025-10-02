@@ -1,0 +1,37 @@
+# ==== ABOUT_TOOL_SECTION_START ====
+
+<h2>Mentivo.AI: AI-Powered Coaching Platform</h2>
+
+<p>Mentivo.AI is an intelligent platform that streamlines the coaching process for corporate coaches, IO psychologists, and leadership consultants. By leveraging AI technology, it automates administrative tasks while enhancing the quality of leadership development programs.</p>
+
+<h3>Core Features</h3>
+<ul>
+  <li><b>Self Branding:</b> Customized landing pages and branded materials to establish your professional identity</li>
+  <li><b>Assessment Tools:</b>
+    <ul>
+      <li>360-degree peer survey generator</li>
+      <li>Self-evaluation forms with personality assessments</li>
+      <li>Comprehensive initial assessment reports</li>
+    </ul>
+  </li>
+  <li><b>Development Planning:</b>
+    <ul>
+      <li>AI-driven curriculum suggestions</li>
+      <li>Personalized training plans</li>
+      <li>Progress tracking and milestone management</li>
+    </ul>
+  </li>
+  <li><b>Reporting:</b> Data-rich progress and final reports with actionable insights</li>
+</ul>
+
+<h3>Key Benefits</h3>
+<ul>
+  <li><b>Efficiency:</b> End-to-end automation of administrative tasks</li>
+  <li><b>Intelligence:</b> AI-powered insights for better decision making</li>
+  <li><b>Flexibility:</b> Customizable to your coaching methodology</li>
+  <li><b>Scalability:</b> Easily manage multiple coaching engagements</li>
+</ul>
+
+<p>Mentivo.AI transforms corporate coaching by combining AI capabilities with intuitive design, enabling coaches to deliver measurable outcomes for leaders at all organizational levels.</p>
+
+# ==== ABOUT_TOOL_SECTION_END ====

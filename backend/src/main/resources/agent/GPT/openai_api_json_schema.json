@@ -1,0 +1,124 @@
+{
+  "type": "object",
+  "properties": {
+    "actions": {
+      "type": "array",
+      "description": "Ordered list of actions the agent must perform or display",
+      "items": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "description": "Kind of action",
+            "enum": [
+              "AGENT",
+              "AGENT_INTERNAL",
+              "TOOL_EXECUTE",
+              "REFUSAL"
+            ]
+          },
+          "message": {
+            "type": "string",
+            "description": "Natural-language text: user-visible copy for AGENT / TOOL preview, or internal monologue for AGENT_INTERNAL"
+          },
+          "tool": {
+            "type": "string",
+            "description": "Name of the tool to call (only for TOOL_EXECUTE); null for other types"
+          },
+          "inputs": {
+            "type": "array",
+            "description": "Arguments for the tool (TOOL_EXECUTE only)",
+            "items": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string",
+                  "description": "Tool-parameter name"
+                },
+                "value": {
+                  "type": "string",
+                  "description": "Tool-parameter value"
+                }
+              },
+              "required": [
+                "name",
+                "value"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "plan": {
+            "type": "array",
+            "description": "Structured next-step plan (AGENT_INTERNAL only)",
+            "items": {
+              "type": "object",
+              "properties": {
+                "step": {
+                  "type": "string",
+                  "description": "One atomic step in the plan"
+                },
+                "tool": {
+                  "type": "string",
+                  "description": "Tool to execute for this step (if any)"
+                },
+                "inputs": {
+                  "type": "array",
+                  "description": "Inputs for the tool (if any)",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "name": {
+                        "type": "string"
+                      },
+                      "value": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "name",
+                      "value"
+                    ],
+                    "additionalProperties": false
+                  }
+                }
+              },
+              "required": [
+                "step",
+                "tool",
+                "inputs"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "approvalRequired": {
+            "type": "boolean",
+            "description": "For TOOL_EXECUTE type only: true if the tool requires user approval before execution (based on tool's previewRequired property), false otherwise. Ignored for other message types."
+          },
+          "error_code": {
+            "type": "string",
+            "description": "Machine-readable code if the model refuses or errors"
+          },
+          "error_message": {
+            "type": "string",
+            "description": "Human-readable explanation of the refusal/error"
+          }
+        },
+        "required": [
+          "type",
+          "message",
+          "tool",
+          "inputs",
+          "plan",
+          "approvalRequired",
+          "error_code",
+          "error_message"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "actions"
+  ],
+  "additionalProperties": false
+}

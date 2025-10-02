@@ -1,0 +1,26 @@
+{
+  "id": "",
+  "title": "",
+  "subject": "",
+  "objective": "",
+  "type": "Assessment/Peer Review",
+  "dueDate": "",
+  "published": true,
+  "questions": [
+    {
+      "index": 0,
+      "page": 0,
+      "type": "MCQ/Descriptive",
+      "text": "Question here",
+      "options": [
+        {
+          "index": 0,
+          "text": "Option Here"
+        }
+      ],
+      "target": [
+        "respondentId1", "respondentId2"
+      ]
+    }
+  ]
+}

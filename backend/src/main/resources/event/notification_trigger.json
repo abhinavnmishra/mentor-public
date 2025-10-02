@@ -1,0 +1,16 @@
+[
+  {
+    "eventTypeUniqueName": "COACHING_PROGRAM_CREATION",
+    "message": "A new coaching program with title {{NAME}} has been created in your org",
+    "cta": "/portal/dashboard",
+    "severity": "INFO",
+    "isEmailEnabled": false
+  },
+  {
+    "eventTypeUniqueName": "COACHING_PROGRAM_UPDATE",
+    "message": "A coaching program with title {{NAME}} has been updated",
+    "cta": "/portal/dashboard",
+    "severity": "INFO",
+    "isEmailEnabled": false
+  }
+]

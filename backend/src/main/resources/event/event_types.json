@@ -1,0 +1,30 @@
+[
+  {
+    "displayName": "Coaching Program Creation",
+    "uniqueName": "COACHING_PROGRAM_CREATION",
+    "description": "Event triggered when a new coaching program is created.",
+    "className": "org.cortex.backend.model.CoachingProgram",
+    "entityOperation": "CREATE"
+  },
+  {
+    "displayName": "Coaching Program Update",
+    "uniqueName": "COACHING_PROGRAM_UPDATE",
+    "description": "Event triggered when a coaching program is updated",
+    "className": "org.cortex.backend.model.CoachingProgram",
+    "entityOperation": "UPDATE"
+  },
+  {
+    "displayName": "Assigned New Assessment",
+    "uniqueName": "SURVEY_RESPONSE_CREATION",
+    "description": "Event triggered when a survey response is created",
+    "className": "org.cortex.backend.model.SurveyResponse",
+    "entityOperation": "CREATE"
+  },
+  {
+    "displayName": "Assessment Completed By Client",
+    "uniqueName": "SURVEY_RESPONSE_UPDATION",
+    "description": "Event triggered when a survey response is created",
+    "className": "org.cortex.backend.model.SurveyResponse",
+    "entityOperation": "CREATE"
+  }
+]

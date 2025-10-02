@@ -1,0 +1,14 @@
+[
+  {
+    "title": "Assign Contract on Program Creation",
+    "eventType": "COACHING_PROGRAM_CREATION",
+    "description": "When a new coaching program is created, assign a contract to the clients.",
+    "entityType": "AGREEMENT"
+  },
+  {
+    "title": "Assign Form on Program Creation",
+    "eventType": "COACHING_PROGRAM_CREATION",
+    "description": "When a new coaching program is created, assign a form to the clients.",
+    "entityType": "FORM"
+  }
+]
